@@ -1,0 +1,78 @@
+[
+    {
+      "food_name": "Spaghetti Carbonara",
+      "short_description": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "ingredients_number": 5,
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Pancetta",
+        "Parmesan Cheese",
+        "Black Pepper"
+      ],
+      "time": "25 minutes",
+      "calorie": "400 kcal per serving"
+    },
+    {
+      "food_name": "Chicken Caesar Salad",
+      "short_description": "A refreshing salad with grilled chicken, romaine lettuce, croutons, and Caesar dressing.",
+      "ingredients_number": 6,
+      "ingredients": [
+        "Grilled Chicken",
+        "Romaine Lettuce",
+        "Croutons",
+        "Parmesan Cheese",
+        "Caesar Dressing",
+        "Lemon Juice"
+      ],
+      "time": "20 minutes",
+      "calorie": "350 kcal per serving"
+    },
+    {
+      "food_name": "Vegetable Stir-Fry",
+      "short_description": "A quick and healthy mix of fresh vegetables stir-fried with a savory sauce.",
+      "ingredients_number": 7,
+      "ingredients": [
+        "Broccoli",
+        "Bell Peppers",
+        "Carrots",
+        "Snap Peas",
+        "Soy Sauce",
+        "Garlic",
+        "Ginger"
+      ],
+      "time": "15 minutes",
+      "calorie": "200 kcal per serving"
+    },
+    {
+      "food_name": "Chocolate Chip Cookies",
+      "short_description": "Delicious homemade cookies with gooey chocolate chips in every bite.",
+      "ingredients_number": 8,
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Sugar",
+        "Brown Sugar",
+        "Eggs",
+        "Vanilla Extract",
+        "Baking Soda",
+        "Chocolate Chips"
+      ],
+      "time": "30 minutes",
+      "calorie": "150 kcal per cookie"
+    },
+    {
+      "food_name": "Avocado Toast",
+      "short_description": "A simple yet satisfying toast topped with creamy avocado and seasonings.",
+      "ingredients_number": 4,
+      "ingredients": [
+        "Bread",
+        "Avocado",
+        "Lemon Juice",
+        "Salt and Pepper"
+      ],
+      "time": "10 minutes",
+      "calorie": "250 kcal per serving"
+    }
+  ]
+  
