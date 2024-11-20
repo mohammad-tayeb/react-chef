@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const MenuItem = ({ menu, handleWantToCook, handleWantToCookFoods }) => {
-    const { food_name, short_description, ingredients_number, ingredients, time, calorie } = menu
+    const { food_name, short_description, ingredients_number, ingredients } = menu
     return (
         <div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
@@ -12,6 +12,12 @@ const MenuItem = ({ menu, handleWantToCook, handleWantToCookFoods }) => {
                         {short_description}
                     </p>
                 </div>
+                <p className='px-6 py-4 font-bold'>Ingridients: {ingredients_number}</p>
+                <ul className='px-6 py-4'>
+                    {
+                         ingredients.map((ingredient,idx) => <li key={idx}>{ingredient}</li>)
+                    }
+                </ul>
                 <div className="px-6 py-4">
                     <button  onClick={() => { handleWantToCook(menu); handleWantToCookFoods(menu); }} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                        Want To Cook
