@@ -15,7 +15,7 @@ const MenuItem = ({ menu, handleWantToCook, handleWantToCookFoods }) => {
                 <p className='px-6 py-4 font-bold'>Ingridients: {ingredients_number}</p>
                 <ul className='px-6 py-4'>
                     {
-                         ingredients.map((ingredient,idx) => <li key={idx}>{ingredient}</li>)
+                         ingredients.map((ingredient,idx) => <li className='text-xs' key={idx}>{ingredient}</li>)
                     }
                 </ul>
                 <div className="px-6 py-4">

@@ -11,7 +11,7 @@ const Menu = ({ handleWantToCook, handleWantToCookFoods }) => {
             .then(data => setMenu(data))
     }, [])
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 w-1/2 ms-12">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4 w-full sm:w-full lg:w-1/2 mx-auto ms-12">
             {
                 menus.map((menu, idx) => <MenuItem key={idx} menu={menu}
                     handleWantToCook={handleWantToCook}

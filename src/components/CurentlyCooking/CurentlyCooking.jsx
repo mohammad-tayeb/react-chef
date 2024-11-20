@@ -6,15 +6,15 @@ const CurentlyCooking = ({ curentCookingStatus, curentCookingFood }) => {
         ...new Map(curentCookingFood.map((UniquefoodItem) => [UniquefoodItem.food_name, UniquefoodItem])).values()
     ];
     return (
-        <div className="ms-12">
-            <h1>Curently Cooking: {curentCookingStatus}</h1>
+        <div className="mt-6 border rounded-md p-3">
+            <h1 className='font-bold'>Curently Cooking: {curentCookingStatus}</h1>
             <hr className="mt-3" />
-            <div className='flex gap-20'>
+            <div className='flex gap-20 font-bold'>
             <h1>Name</h1>
             <h1>Time</h1>
             <h1>Calorie</h1>
             </div>
-            <div>
+            <div className='text-xs'>
                 {
                     uniqueFoods.map((cFood,idx) => <CurentCookingStatus key={idx} cFood={cFood}></CurentCookingStatus>)
                 }

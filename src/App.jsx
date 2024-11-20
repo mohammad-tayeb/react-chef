@@ -14,34 +14,39 @@ function App() {
   const [curentCookingStatus, setCurentCookingStatus] = useState(0);
   const [curentCookingFood, setCurentCookingFood] = useState([]);
 
-  const handleCurentlyCookingFood = (foodItem) => {
-    const newCurentFoodItem = [...curentCookingFood, foodItem]
-    setCurentCookingFood(newCurentFoodItem);
+  const handleWantToCook = () => {
+    const newWantToCook = wantToCook + 1;
+    setWantToCook(newWantToCook);
   }
-  
+
   const handleWantToCookFoods = (foodItem) => {
     const newFood = [...wantToCookFoods, foodItem]
     setWantToCookFoods(newFood);
   }
 
-  const handleCurentlyCooking = () => {
+  const handleCurentlyCooking = (foodname) => {
     const newCurentltCooking = curentCookingStatus + 1
     setCurentCookingStatus(newCurentltCooking);
+    console.log(foodname)
+    console.log(wantToCookFoods)
+    const remainingFood = wantToCookFoods.filter(food => food.food_name !== foodname);
+    setWantToCookFoods(remainingFood);
+  }
+
+  const handleCurentlyCookingFood = (foodItem) => {
+    const newCurentFoodItem = [...curentCookingFood, foodItem]
+    setCurentCookingFood(newCurentFoodItem);
+    // console.log('remove food' , food_name)
   }
 
 
-
-  const handleWantToCook = () => {
-    const newWantToCook = wantToCook + 1;
-    setWantToCook(newWantToCook);
-  }
 
   return (
     <>
       <Header></Header>
       <Section1></Section1>
       <Section02></Section02>
-      <div className='flex'>
+      <div className='flex flex-wrap sm:flex-col md:flex-row lg:flex-row'>
         <Menu handleWantToCook={handleWantToCook} handleWantToCookFoods={handleWantToCookFoods}></Menu>
         <div>
           <Status
